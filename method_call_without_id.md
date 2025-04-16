@@ -16,6 +16,7 @@ This endpoint allows users to call methods on specific records of any Odoo model
 **METHOD**
 
 1. ```magento_update_warehouse```
+   
 **ARGUMENTS**
 ```json
 {
@@ -35,6 +36,7 @@ This endpoint allows users to call methods on specific records of any Odoo model
 ```
 
 2. ```magento_update_tracking_number```
+   
 **ARGUMENTS**
 ```json
 {
