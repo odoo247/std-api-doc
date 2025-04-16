@@ -16,8 +16,6 @@ This endpoint allows users to call methods on specific records of any Odoo model
 **METHOD**
 
 1. ```magento_update_warehouse```
-2. ```magento_update_tracking_number```
-
 **ARGUMENTS**
 ```json
 {
@@ -25,6 +23,24 @@ This endpoint allows users to call methods on specific records of any Odoo model
     {
         "order_id": "Magento order ID",
         "shipment_id": "Magento Shipment ID",
+        "items": [
+            {
+              "order_line_id": "Magento order line ID",
+              "warehouse_source_code": "Source codes in Magento",
+              "tracking_number": "Tracking Number"
+             }
+        ]
+    }
+}
+```
+
+2. ```magento_update_tracking_number```
+**ARGUMENTS**
+```json
+{
+    "kwargs": 
+    {
+        "order_id": "Magento order ID",
         "items": [
             {
               "order_line_id": "Magento order line ID",
