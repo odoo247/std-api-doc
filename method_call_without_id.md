@@ -23,12 +23,12 @@ This endpoint allows users to call methods on specific records of any Odoo model
     "kwargs": 
     {
         "order_id": "Magento order ID",
-        "shipment_id": "Magento Shipment ID",
         "items": [
             {
               "order_line_id": "Magento order line ID",
               "warehouse_source_code": "Source codes in Magento",
-              "tracking_number": "Tracking Number"
+              "tracking_number": "Tracking Number",
+               "shipment_id": "Magento Shipment ID",
              }
         ]
     }
@@ -96,12 +96,12 @@ This endpoint allows users to call methods on specific records of any Odoo model
 3. **Calling a Method With Keyword Arguments**  
    Example: Calling `magento_update_warehouse` with {
         "order_id": "Magento order ID",
-        "shipment_id": "Magento Shipment ID",
         "items": [
             {
               "order_line_id": "Magento order line ID",
               "warehouse_source_code": "Source codes in Magento",
-              "tracking_number": "Tracking Number"
+              "tracking_number": "Tracking Number",
+               "shipment_id": "Magento Shipment ID",
              }
         ]
     }.  
